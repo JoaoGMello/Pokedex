@@ -7,10 +7,122 @@
     <title>Pokedex</title>
 </head>
 <body>
-    aaaa
+  <header>
+    <h1>Pokedex</h1>
+  </header>
+
+  <main>
+    <form class="pokedex-control">
+      <div class="form-control">
+        <label for="filter-name">Nome:</label>
+        <input class="filter-name" type="text" id="filter-name" placeholder="Digite o nome do pokemon">
+      </div>
+
+      <div class="form-control">
+        <label for="filter-type">Tipo:</label>
+        <select class="filter-type">
+          <option value="">All</option>
+          <option value="">Bug</option>
+          <option value="">Dragon</option>
+          <option value="">Electric</option>
+          <option value="">Fire</option>
+          <option value="">Water</option>
+          <option value="">Grass</option>
+          <option value="">Flying</option>
+          <option value="">Ice</option>
+          <option value="">Fairy</option>
+          <option value="">Steel</option>
+          <option value="">Rock</option>
+          <option value="">Ground</option>
+          <option value="">Poison</option>
+          <option value="">Ghost</option>
+          <option value="">Dark</option>
+          <option value="">Psychic</option>
+          <option value="">Normal</option>
+          <option value="">Fighting</option>
+        </select>
+      </div>
+
+      <div class="form-control">
+        <label for="sort">Ordenação:</label>
+        <select class="sort-type" >
+          <option value="">Menor Número (Primeiro)</option>
+          <option value="">Maior Número (Primeiro)</option>
+          <option value="">A-Z</option>
+          <option value="">Z-A</option>
+        </select>
+      </div>
+    </form>
+  </main>
 </body>
 </html>
 
 <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #c00;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+body{
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+label {
+  cursor: default;
+}
+
+.pokedex-control {
+  margin: 4rem 0 3rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control{
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+}
+
+.form-control > input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #ffffff;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-control > select{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #ffffff;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
 </style>
